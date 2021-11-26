@@ -1,10 +1,10 @@
 import { addDecorator } from "@storybook/react";
-import GlobalStyle from "../src/styles/GlobalStyle";
+import GlobalStyleComposed from "../src/styles/GlobalStyle";
 import { BreakpointSize } from "../src/styles/Breakpoints";
 
 addDecorator((storyFn) => (
   <>
-    <GlobalStyle />
+    <GlobalStyleComposed />
     {storyFn()}
   </>
 ));
