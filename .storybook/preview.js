@@ -1,13 +1,16 @@
 import { addDecorator } from "@storybook/react";
+import { select } from "@storybook/addon-knobs";
 
-import ThemeProvider from "../src/styles/ThemeProvider";
+import ThemeProvider, { ThemeNames } from "../src/styles/ThemeProvider";
 import GlobalStyleComposed from "../src/styles/GlobalStyle";
 import { BreakpointSize } from "../src/styles/Breakpoints";
 
 addDecorator((storyFn) => (
   <>
-    <GlobalStyleComposed />
-    <ThemeProvider>{storyFn()}</ThemeProvider>
+    <ThemeProvider theme={select("Theme", ThemeNames, ThemeNames.ocean)}>
+      <GlobalStyleComposed />
+      {storyFn()}
+    </ThemeProvider>
   </>
 ));
 
