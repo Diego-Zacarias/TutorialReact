@@ -1,0 +1,187 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders with color danger 1`] = `
+<DocumentFragment>
+  .c0 {
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 12px 36px;
+  cursor: pointer;
+  background-color: #ff3d00;
+  border: 2px solid #ff3d00;
+  color: #212121;
+}
+
+.c0:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.c0:hover:enabled {
+  background-color: #b22a00;
+  border-color: #b22a00;
+}
+
+<button
+    class="c0"
+    color="danger"
+    type="buton"
+  />
+</DocumentFragment>
+`;
+
+exports[`renders with color default 1`] = `
+<DocumentFragment>
+  .c0 {
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 12px 36px;
+  cursor: pointer;
+  background-color: #909090;
+  border: 2px solid #909090;
+  color: #212121;
+}
+
+.c0:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.c0:hover:enabled {
+  background-color: #5a6268;
+  border-color: #5a6268;
+}
+
+<button
+    class="c0"
+    color="default"
+    type="buton"
+  />
+</DocumentFragment>
+`;
+
+exports[`renders with color primary 1`] = `
+<DocumentFragment>
+  .c0 {
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 12px 36px;
+  cursor: pointer;
+  background-color: #12f3da;
+  border: 2px solid #12f3da;
+  color: #212121;
+}
+
+.c0:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.c0:hover:enabled {
+  background-color: #01d1b5;
+  border-color: #01d1b5;
+}
+
+<button
+    class="c0"
+    color="primary"
+    type="buton"
+  />
+</DocumentFragment>
+`;
+
+exports[`renders with variant default 1`] = `
+<DocumentFragment>
+  .c0 {
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 12px 36px;
+  cursor: pointer;
+  background-color: #909090;
+  border: 2px solid #909090;
+  color: #212121;
+}
+
+.c0:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.c0:hover:enabled {
+  background-color: #5a6268;
+  border-color: #5a6268;
+}
+
+<button
+    class="c0"
+    color="default"
+    type="buton"
+  />
+</DocumentFragment>
+`;
+
+exports[`renders with variant link 1`] = `
+<DocumentFragment>
+  .c0 {
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 12px 36px;
+  cursor: pointer;
+  background-color: #909090;
+  border: 2px solid #909090;
+  color: #212121;
+}
+
+.c0:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.c0:hover:enabled {
+  background-color: #5a6268;
+  border-color: #5a6268;
+}
+
+<button
+    class="c0"
+    color="default"
+    type="buton"
+  />
+</DocumentFragment>
+`;
+
+exports[`renders with variant outlined 1`] = `
+<DocumentFragment>
+  .c0 {
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 12px 36px;
+  cursor: pointer;
+  background-color: #909090;
+  border: 2px solid #909090;
+  color: #212121;
+}
+
+.c0:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.c0:hover:enabled {
+  background-color: #5a6268;
+  border-color: #5a6268;
+}
+
+<button
+    class="c0"
+    color="default"
+    type="buton"
+  />
+</DocumentFragment>
+`;

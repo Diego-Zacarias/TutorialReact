@@ -1,9 +1,9 @@
 import React from "react";
-import { text } from "@storybook/addon-knobs";
 
 import Hero from "./Hero";
 import bg_image from "../stories/assets/bg_time.jpg";
 import Heading from "./Heading";
+import Button from "./Button";
 
 export default {
   title: "Components/Hero",
@@ -13,11 +13,19 @@ export default {
 export const usage = () => (
   <Hero image={bg_image}>
     <Heading>
-      <h1>{text("title", "Um título")}</h1>
+      <h1>
+        Schedule <br />
+        <strong>App</strong>
+      </h1>
     </Heading>
-    {text("text", "Um texto Qulquer")}
+    <ul>
+      <li>Acompnhe seus agendamentos</li>
+      <li>Gerencie seus horários</li>
+      <li>Melhore o seu serviço</li>
+    </ul>
     <br />
-    <br />
-    <button>Start now</button>
+    <Button variants="outlined" color="primary">
+      Start now
+    </Button>
   </Hero>
 );
