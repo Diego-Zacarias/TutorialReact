@@ -1,12 +1,12 @@
 import React from "react";
 
 import Hero from "./Hero";
-import bg_image from "../stories/assets/bg_time.jpg";
-import Heading from "./Heading";
-import Button from "./Button";
+import bg_image from "../../assets/bg_time.jpg";
+import Heading from "../atoms/Heading";
+import Button from "../atoms/Button";
 
 export default {
-  title: "Components/Hero",
+  title: "Components/molecules/Hero",
   component: Hero,
 };
 
