@@ -1,7 +1,15 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import PropTypes from "prop-types";
 
 import { breakAt, BreakpointSize } from "styles/Breakpoints";
+
+const breakColumnAt = (size) => (props) =>
+  props[size] &&
+  css`
+    ${breakAt(BreakpointSize[size])} {
+      grid-template-columns: repeat(${(props) => props[size]}, 1fr);
+    }
+  `;
 
 const Grid = styled.div`
   display: grid;
@@ -9,18 +17,10 @@ const Grid = styled.div`
   grid-row-gap: 16px;
   grid-template-columns: repeat(1, 1fr);
 
-  ${breakAt(BreakpointSize.sm)} {
-    grid-template-columns: repeat(${(props) => props.sm}, 1fr);
-  }
-  ${breakAt(BreakpointSize.md)} {
-    grid-template-columns: repeat(${(props) => props.md}, 1fr);
-  }
-  ${breakAt(BreakpointSize.lg)} {
-    grid-template-columns: repeat(${(props) => props.lg}, 1fr);
-  }
-  ${breakAt(BreakpointSize.xl)} {
-    grid-template-columns: repeat(${(props) => props.xl}, 1fr);
-  }
+  ${breakColumnAt("sm")}
+  ${breakColumnAt("md")}
+  ${breakColumnAt("lg")}
+  ${breakColumnAt("xl")}
 `;
 
 Grid.defaultProps = {
