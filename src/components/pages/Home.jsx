@@ -10,6 +10,46 @@ import Grid from "components/atoms/Grid";
 import Feature from "components/atoms/Feature";
 import Section from "components/molecules/Section";
 import Footer from "components/organisms/Footer";
+import ProductGrid from "components/organisms/ProductGrid";
+
+const products = [
+  {
+    id: 1,
+    title: "Title 1",
+    summary: "asdfasdfsafd",
+    image: bg_image,
+  },
+  {
+    id: 2,
+    title: "Title 2",
+    summary: "asdfasdfsafd",
+    image: bg_image,
+  },
+  {
+    id: 3,
+    title: "Title 3",
+    summary: "asdfasdfsafd",
+    image: bg_image,
+  },
+  {
+    id: 4,
+    title: "Title 4",
+    summary: "asdfasdfsafd",
+    image: bg_image,
+  },
+  {
+    id: 5,
+    title: "Title 5",
+    summary: "asdfasdfsafd",
+    image: bg_image,
+  },
+  {
+    id: 6,
+    title: "Title 6",
+    summary: "asdfasdfsafd",
+    image: bg_image,
+  },
+];
 
 const Home = () => {
   return (
@@ -62,6 +102,7 @@ const Home = () => {
       <Section inverse>
         <Heading>
           <h2>Conheca nossos servicos</h2>
+          <ProductGrid products={products} />
         </Heading>
       </Section>
       <Section>
