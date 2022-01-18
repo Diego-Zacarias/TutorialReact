@@ -9,7 +9,7 @@ const Content = styled.div`
   ${(props) =>
     props.inverse &&
     css`
-      background-color: #f7f7f7;
+      background-color: #e7e7e7;
     `}
   h2 {
     margin-top: 0;

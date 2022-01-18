@@ -37,7 +37,8 @@ export const CardMedia = ({ image }) => <StyleMedia image={image} />;
 
 const Root = styled.div`
   background: #fff;
-  border-radius: 4px;
+  border-radius: 8px;
+  overflow: hidden;
 `;
 
 CardMedia.defaultProps = {

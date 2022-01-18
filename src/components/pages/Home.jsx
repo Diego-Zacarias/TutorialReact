@@ -11,6 +11,8 @@ import Feature from "components/atoms/Feature";
 import Section from "components/molecules/Section";
 import Footer from "components/organisms/Footer";
 import ProductGrid from "components/organisms/ProductGrid";
+import AccordionGroup from "components/atoms/AccordionGroup";
+import Accordion from "components/atoms/Accordion";
 
 const products = [
   {
@@ -129,6 +131,26 @@ const Home = () => {
       <Section inverse>
         <Heading>
           <h2>Duvidas recorrentes</h2>
+          <AccordionGroup>
+            <Accordion title="Título do accordion">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
+              aperiam perferendis beatae maxime sunt expedita commodi deleniti
+              enim nesciunt est totam aliquam illo ducimus amet nam
+              consequuntur, nemo dignissimos. Dolorem.
+            </Accordion>
+            <Accordion title="Título do accordion">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
+              aperiam perferendis beatae maxime sunt expedita commodi deleniti
+              enim nesciunt est totam aliquam illo ducimus amet nam
+              consequuntur, nemo dignissimos. Dolorem.
+            </Accordion>
+            <Accordion title="Título do accordion">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
+              aperiam perferendis beatae maxime sunt expedita commodi deleniti
+              enim nesciunt est totam aliquam illo ducimus amet nam
+              consequuntur, nemo dignissimos. Dolorem.
+            </Accordion>
+          </AccordionGroup>
         </Heading>
       </Section>
       <Footer />
