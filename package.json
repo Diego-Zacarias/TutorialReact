@@ -8,6 +8,7 @@
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "chromatic": "^6.4.0",
     "jest-styled-components": "^7.0.8",
     "prettier": "^2.4.1",
     "prop-types": "^15.7.2",
@@ -26,7 +27,8 @@
     "cover": "yarn test -- --coverage --watchAll=false",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "chromatic": "npx chromatic --project-token=9e3279497433"
   },
   "eslintConfig": {
     "extends": [
