@@ -35,12 +35,6 @@ const StyleMedia = styled.div`
 
 export const CardMedia = ({ image }) => <StyleMedia image={image} />;
 
-const Root = styled.div`
-  background: #fff;
-  border-radius: 8px;
-  overflow: hidden;
-`;
-
 CardMedia.defaultProps = {
   children: undefined,
 };
@@ -52,6 +46,13 @@ CardMedia.propTypes = {
 //#endregion
 
 //#region Card
+
+const Root = styled.div`
+  background: #fff;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  overflow: hidden;
+`;
 
 const Card = ({ children }) => <Root>{children}</Root>;
 
