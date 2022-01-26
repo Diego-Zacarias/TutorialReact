@@ -19,7 +19,7 @@ workflows:
     #  version: '16.10'
     # If you are using yarn, change the line below from "npm" to "yarn"
     #  pkg-manager: npm
-    setup:
+    build:
       docker:
         - image: circleci/node:16.13.2
       steps:
