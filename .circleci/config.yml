@@ -17,7 +17,7 @@ jobs:
       - node/install-yarn
       - run: node --version
       - run: yarn --version
-      - node/install-packges:
+      - node/install-packages:
           pkg-manager: yarn
       - run: yarn lint
 
