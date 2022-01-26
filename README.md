@@ -1,4 +1,4 @@
-![AppVeyor](https://img.shields.io/appveyor/build/ZacaDev23/TutorialReact)
+![CircleCI](https://img.shields.io/circleci/build/github/ZacaDev23/TutorialReact)
 
 # Schedule APP - Ultimate
 
