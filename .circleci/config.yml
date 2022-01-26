@@ -9,7 +9,7 @@ orbs:
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
 jobs:
-  build:
+  tests:
     docker:
       - image: cimg/node:17.4.0
     steps:
@@ -17,11 +17,14 @@ jobs:
       - node/install-yarn
       - run: node --version
       - run: yarn --version
+      - node/install-packges:
+          pkg-manager: yarn
+      - run: yarn lint
 
 workflows:
   ci:
     jobs:
-      - build
+      - tests
 
   #sample: # This is the name of the workflow, feel free to change it to better match your workflow.
   # Inside the workflow, you define the jobs you want to run.
