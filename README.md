@@ -1,5 +1,7 @@
 ![CircleCI](https://img.shields.io/circleci/build/github/ZacaDev23/TutorialReact)
 
+![Codecov](https://img.shields.io/codecov/c/github/ZacaDev23/TutorialReact)
+
 # Schedule APP - Ultimate
 
 # Getting Started with Create React App
