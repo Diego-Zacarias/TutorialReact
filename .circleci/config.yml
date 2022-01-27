@@ -16,12 +16,19 @@ jobs:
     steps:
       - checkout
       - node/install-yarn
-      - run: node --version
-      - run: yarn --version
+      - run:
+          name: Show node version
+          command: |
+            node --version
+            yarn --version
       - node/install-packages:
           pkg-manager: yarn
-      - run: yarn lint
-      - run: yarn cover
+      - run:
+          name: Run lint
+          command: yarn lint
+      - run:
+          name: Run test andd coverage
+          command: yarn cover
       - codecov/upload:
           file: coverage/*.json
 
