@@ -1,7 +1,11 @@
 import React from "react";
 
-import Card, { CardBody, CardMedia } from "./atoms/Card";
-import Section from "./molecules/Section";
+import Card, {
+  CardBody,
+  CardMedia,
+  CardMediaDescription,
+} from "components/atoms/Card";
+import Section from "components/molecules/Section";
 import Heading from "components/atoms/Heading";
 import Button from "components/atoms/Button";
 import im_cover from "assets/bg_time.jpg";
@@ -34,4 +38,12 @@ export const usage = () => (
       </CardBody>
     </Card>
   </Section>
+);
+
+export const justImage = () => (
+  <Card>
+    <CardMedia image={im_cover}>
+      <CardMediaDescription>Descricao da imagem</CardMediaDescription>
+    </CardMedia>
+  </Card>
 );
