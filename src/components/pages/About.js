@@ -2,6 +2,8 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 
+import { useScrollToTop } from "hooks/scroll";
+
 import bg_image from "assets/bg_time.jpg";
 import img_avatar from "assets/img_2.jpg";
 import AboutImage from "draws/ScheduleSvg1";
@@ -11,6 +13,7 @@ import Section from "components/molecules/Section";
 import Grid from "components/atoms/Grid";
 import Footer from "components/organisms/Footer";
 import Card, { CardMedia, CardMediaDescription } from "components/atoms/Card";
+import BreadCrumb from "components/atoms/BreadCrumb";
 
 const ImageContainer = styled.div`
   svg {
@@ -30,13 +33,17 @@ const Team = [
   { id: 6, name: "Cuca", avatar: img_avatar },
 ];
 
+const items = [{ label: "Início", link: "/" }, { label: "Sobre" }];
+
 const About = () => {
+  useScrollToTop();
   return (
     <>
       <Hero image={bg_image}>
         <Heading>
           <h1>ScheduleApp</h1>
         </Heading>
+        <BreadCrumb items={items} />
       </Hero>
       <Section>
         <Grid md={2}>

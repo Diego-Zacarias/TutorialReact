@@ -3,8 +3,11 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 import { FaIdCard, FaHome, FaScroll } from "react-icons/fa";
 
+import { useScrollToTop } from "hooks/scroll";
+
 import Hero from "components/molecules/Hero";
 import Heading from "components/atoms/Heading";
+import BreadCrumb from "components/atoms/BreadCrumb";
 import Section from "components/molecules/Section";
 import Callout, {
   CalloutBody,
@@ -12,9 +15,10 @@ import Callout, {
   CalloutMedia,
 } from "components/atoms/Callout";
 import Button from "components/atoms/Button";
-import DatePicker from "draws/DatePicker";
-import HeroImage from "assets/bg_time.jpg";
 import Footer from "components/organisms/Footer";
+
+import HeroImage from "assets/bg_time.jpg";
+import DatePicker from "draws/DatePicker";
 
 const PinnedList = styled.ul`
   list-style: none;
@@ -33,13 +37,22 @@ const PinnedItem = styled.li`
   }
 `;
 
+const items = [
+  { label: "Home", link: "/" },
+  { label: "Serviços" },
+  { label: "Nome do Serviço" },
+];
+
 const ProductDetail = () => {
+  useScrollToTop();
+
   return (
     <>
       <Hero image={HeroImage}>
         <Heading>
           <h1>Nome do Servicos</h1>
         </Heading>
+        <BreadCrumb items={items} />
       </Hero>
       <Section>
         <p>

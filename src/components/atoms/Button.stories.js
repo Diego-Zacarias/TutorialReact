@@ -17,87 +17,49 @@ const Toolbar = styled.div`
   }
 `;
 
-export const usage = () => (
+const ButtonWrapper = ({ props }) => (
   <div>
     <p>Enable:</p>
     <Toolbar>
-      <Button {...events}>Default</Button>
-      <Button color="primary" {...events}>
+      <Button {...props} {...events}>
+        Default
+      </Button>
+      <Button color="primary" {...props} {...events}>
         Primary
       </Button>
-      <Button color="danger" {...events}>
+      <Button color="danger" {...props} {...events}>
+        Danger
+      </Button>
+    </Toolbar>
+    <p>As a Link:</p>
+    <Toolbar>
+      <Button as="a" href="#" {...props} {...events}>
+        Default
+      </Button>
+      <Button color="primary" as="a" href="#" {...props} {...events}>
+        Primary
+      </Button>
+      <Button color="danger" as="a" href="#" {...props} {...events}>
         Danger
       </Button>
     </Toolbar>
     <p>Disable:</p>
     <Toolbar>
-      <Button disabled {...events}>
+      <Button disabled {...props} {...events}>
         Default
       </Button>
-      <Button disabled color="primary" {...events}>
+      <Button disabled color="primary" {...props} {...events}>
         Primary
       </Button>
-      <Button disabled color="danger" {...events}>
+      <Button disabled color="danger" {...props} {...events}>
         Danger
       </Button>
     </Toolbar>
   </div>
 );
 
-export const outlined = () => (
-  <div>
-    <p>Enable:</p>
-    <Toolbar>
-      <Button variants="outlined" {...events}>
-        Default
-      </Button>
-      <Button variants="outlined" color="primary" {...events}>
-        Primary
-      </Button>
-      <Button variants="outlined" color="danger" {...events}>
-        Danger
-      </Button>
-    </Toolbar>
-    <p>Disable:</p>
-    <Toolbar>
-      <Button variants="outlined" disabled {...events}>
-        Default
-      </Button>
-      <Button variants="outlined" disabled color="primary" {...events}>
-        Primary
-      </Button>
-      <Button variants="outlined" disabled color="danger" {...events}>
-        Danger
-      </Button>
-    </Toolbar>
-  </div>
-);
+export const usage = () => <ButtonWrapper />;
 
-export const link = () => (
-  <div>
-    <p>Enable:</p>
-    <Toolbar>
-      <Button variants="link" {...events}>
-        Default
-      </Button>
-      <Button variants="link" color="primary" {...events}>
-        Primary
-      </Button>
-      <Button variants="link" color="danger" {...events}>
-        Danger
-      </Button>
-    </Toolbar>
-    <p>Disable:</p>
-    <Toolbar>
-      <Button variants="link" disabled {...events}>
-        Default
-      </Button>
-      <Button variants="link" disabled color="primary" {...events}>
-        Primary
-      </Button>
-      <Button variants="link" disabled color="danger" {...events}>
-        Danger
-      </Button>
-    </Toolbar>
-  </div>
-);
+export const outlined = () => <ButtonWrapper variant="outlined" />;
+
+export const link = () => <ButtonWrapper variant="link" />;
