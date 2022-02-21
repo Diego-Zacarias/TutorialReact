@@ -30,7 +30,7 @@ Grid.defaultProps = {
   xl: undefined,
 };
 
-Grid.PropTypes = {
+Grid.propTypes = {
   sm: PropTypes.number,
   md: PropTypes.number,
   lg: PropTypes.number,

@@ -31,8 +31,8 @@ const Content = styled.div`
 
   li {
     &::before {
-      content: "\\2713\\0020";
       color: ${(props) => props.theme.colors.primary.main};
+      content: "\\2713\\0020";
     }
   }
 `;

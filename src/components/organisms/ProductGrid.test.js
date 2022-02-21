@@ -1,6 +1,5 @@
 import React from "react";
 import { render, screen, fireEvent } from "test-utils";
-import { MemoryRouter } from "react-router-dom";
 
 import ProductGrid from "./ProductGrid";
 
@@ -21,21 +20,13 @@ describe.each([
   [6, 3],
 ])("with %i products", (size, expected) => {
   test(`show only ${expected}`, () => {
-    render(
-      <MemoryRouter>
-        <ProductGrid products={buildProducts(size)} />
-      </MemoryRouter>
-    );
+    render(<ProductGrid products={buildProducts(size)} />);
 
     expect(screen.getAllByRole("heading").length).toBe(expected);
   });
 
   test("show all the products when button is clicked", async () => {
-    render(
-      <MemoryRouter>
-        <ProductGrid products={buildProducts(size)} />
-      </MemoryRouter>
-    );
+    render(<ProductGrid products={buildProducts(size)} />);
 
     await fireEvent.click(screen.getByText("Lista Completa"));
 
