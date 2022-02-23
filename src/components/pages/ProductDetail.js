@@ -16,7 +16,7 @@ import Footer from "components/organisms/Footer";
 
 import HeroImage from "assets/bg_time.jpg";
 import DatePicker from "draws/DatePicker";
-import ProductTypes from "types/ProductTypes";
+import ProductTypes from "models/types/ProductTypes";
 
 const PinnedList = styled.ul`
   list-style: none;

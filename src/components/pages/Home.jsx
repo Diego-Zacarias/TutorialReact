@@ -15,7 +15,7 @@ import Footer from "components/organisms/Footer";
 import ProductGrid from "components/organisms/ProductGrid";
 import AccordionGroup from "components/atoms/AccordionGroup";
 import Accordion from "components/atoms/Accordion";
-import ProductTypes from "types/ProductTypes";
+import ProductTypes from "models/types/ProductTypes";
 
 const Home = ({ products }) => {
   return (
