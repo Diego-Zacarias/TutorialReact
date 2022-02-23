@@ -1,6 +1,7 @@
 import React from "react";
 import { FaCar } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 
 import Hero from "components/molecules/Hero";
 import Heading from "components/atoms/Heading";
@@ -14,47 +15,9 @@ import Footer from "components/organisms/Footer";
 import ProductGrid from "components/organisms/ProductGrid";
 import AccordionGroup from "components/atoms/AccordionGroup";
 import Accordion from "components/atoms/Accordion";
+import ProductTypes from "types/ProductTypes";
 
-const products = [
-  {
-    id: 1,
-    title: "Title 1",
-    summary: "asdfasdfsafd",
-    image: bg_image,
-  },
-  {
-    id: 2,
-    title: "Title 2",
-    summary: "asdfasdfsafd",
-    image: bg_image,
-  },
-  {
-    id: 3,
-    title: "Title 3",
-    summary: "asdfasdfsafd",
-    image: bg_image,
-  },
-  {
-    id: 4,
-    title: "Title 4",
-    summary: "asdfasdfsafd",
-    image: bg_image,
-  },
-  {
-    id: 5,
-    title: "Title 5",
-    summary: "asdfasdfsafd",
-    image: bg_image,
-  },
-  {
-    id: 6,
-    title: "Title 6",
-    summary: "asdfasdfsafd",
-    image: bg_image,
-  },
-];
-
-const Home = () => {
+const Home = ({ products }) => {
   return (
     <>
       <Hero image={bg_image}>
@@ -159,6 +122,14 @@ const Home = () => {
       <Footer />
     </>
   );
+};
+
+Home.defaultProps = {
+  products: [],
+};
+
+Home.propTypes = {
+  products: PropTypes.arrayOf(ProductTypes),
 };
 
 export default Home;

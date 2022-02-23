@@ -1,8 +1,5 @@
 import React from "react";
-import PropTypes from "prop-types";
 import styled from "styled-components";
-
-import { useScrollToTop } from "hooks/scroll";
 
 import bg_image from "assets/bg_time.jpg";
 import img_avatar from "assets/img_2.jpg";
@@ -36,7 +33,6 @@ const Team = [
 const items = [{ label: "Início", link: "/" }, { label: "Sobre" }];
 
 const About = () => {
-  useScrollToTop();
   return (
     <>
       <Hero image={bg_image}>
@@ -136,9 +132,5 @@ const About = () => {
     </>
   );
 };
-
-About.defaultProps = {};
-
-About.propTypes = {};
 
 export default About;
