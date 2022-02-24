@@ -34,7 +34,7 @@
     "build-storybook": "build-storybook -s public",
     "chromatic": "npx chromatic --project-token=9e3279497433",
     "lint": "eslint src/**/*.js",
-    "svg": "svgr --icon --replace-attr-values '#ffc107=currentColor' -d src/draws/"
+    "svg": "svgr --icon --replace-attr-values '#6C63FF=currentColor' -d src/draws/"
   },
   "eslintConfig": {
     "extends": [
