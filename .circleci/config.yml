@@ -27,7 +27,7 @@ jobs:
           name: Run lint check
           command: yarn lint
       - run:
-          name: Run test and coverage
+          name: Run test and coverage check
           command: yarn cover
       - codecov/upload:
           file: coverage/*.json
@@ -46,3 +46,4 @@ workflows:
   # If you are using yarn, change the line below from "npm" to "yarn"
   #  pkg-manager: npm
   # - node/test:
+  # - more comments
