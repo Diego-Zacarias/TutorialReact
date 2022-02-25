@@ -8,3 +8,15 @@ test("match snapshot", () => {
 
   expect(asFragment()).toMatchSnapshot();
 });
+
+test("match snapshot with strong", () => {
+  const { asFragment } = render(
+    <Heading>
+      <h1>
+        <strong>Title</strong>
+      </h1>
+    </Heading>
+  );
+
+  expect(asFragment()).toMatchSnapshot();
+});

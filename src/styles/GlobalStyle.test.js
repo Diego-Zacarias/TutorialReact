@@ -4,7 +4,7 @@ import { render } from "test-utils";
 import GlobalStyle from "./GlobalStyle";
 
 test("match snapshot", () => {
-  render(<GlobalStyle />);
+  const { asFragment } = render(<GlobalStyle />);
 
-  expect(document.head).toMatchSnapshot();
+  expect(asFragment()).toMatchSnapshot();
 });

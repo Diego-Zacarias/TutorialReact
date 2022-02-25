@@ -1,8 +1,9 @@
-import { render, screen } from "@testing-library/react";
+import React from "react";
+import { render } from "@testing-library/react";
 import App from "./App";
 
 test("renders call to action", () => {
-  render(<App />);
-  const linkElement = screen.getByText(/Start now/i);
+  const { getByText } = render(<App />);
+  const linkElement = getByText(/Schedule App/i, { selector: "h2" });
   expect(linkElement).toBeInTheDocument();
 });

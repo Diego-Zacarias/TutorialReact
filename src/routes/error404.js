@@ -5,8 +5,8 @@ import ErroSvg from "draws/Error";
 
 const props = {
   image: <ErroSvg />,
-  title: "Erro",
-  description: "descricao do erro",
+  title: "Página não encontrada!",
+  description: "A página buscada não foi encontrada ou não existe.",
 };
 
 const error404 = () => {
