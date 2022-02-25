@@ -31,9 +31,9 @@ jobs:
           command: yarn cover
       - codecov/upload:
           file: coverage/*.json
-      - run:
-          name: Chromatic Deploy
-          command: yarn chromatic --project-token=${CHROMATI_TOKEN}
+      # - run:
+      #     name: Chromatic Deploy
+      #     command: yarn chromatic
 
 workflows:
   ci:
